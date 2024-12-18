@@ -24,5 +24,8 @@ lm = dspy.LM(
 dspy.settings.configure(lm=lm)
 
 
+import mlflow
 
+mlflow.set_experiment("DSPy Quickstart")
 
+mlflow.dspy.autolog()
